@@ -1,0 +1,364 @@
+Dependencies for Project 'ftm_simple_pwm', Target 'ftm_simple_pwm debug': (DO NOT MODIFY !)
+CompilerVersion: 6150000::V6.15::ARMCLANG
+F (board/board.c)(0x645DB1F7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/board.o -MD)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (drivers\fsl_common.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\assert.h)(0x5F36D096)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F36D0AC)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F36D0AE)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+I (drivers\fsl_common_arm.h)(0x645DB1F7)
+I (drivers\fsl_clock.h)(0x645DB1F7)
+I (utilities\fsl_debug_console.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F36D092)
+I (board\board.h)(0x645DB1F7)
+I (board\clock_config.h)(0x645DB346)
+I (drivers\fsl_gpio.h)(0x645DB1F7)
+F (board/board.h)(0x645DB1F7)()
+F (board/clock_config.c)(0x645DD1E0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/clock_config.o -MD)
+I (drivers\fsl_smc.h)(0x645DB1F7)
+I (drivers\fsl_common.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\assert.h)(0x5F36D096)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F36D0AC)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F36D0AE)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+I (drivers\fsl_common_arm.h)(0x645DB1F7)
+I (drivers\fsl_clock.h)(0x645DB1F7)
+I (board\clock_config.h)(0x645DB346)
+F (board/clock_config.h)(0x645DB346)()
+F (board/pin_mux.c)(0x645DFF4B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/pin_mux.o -MD)
+I (drivers\fsl_common.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\assert.h)(0x5F36D096)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F36D0AC)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F36D0AE)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+I (drivers\fsl_common_arm.h)(0x645DB1F7)
+I (drivers\fsl_clock.h)(0x645DB1F7)
+I (drivers\fsl_port.h)(0x645DB1F7)
+I (drivers\fsl_gpio.h)(0x645DB1F7)
+I (board\pin_mux.h)(0x645DB346)
+F (board/pin_mux.h)(0x645DB346)()
+F (CMSIS/cmsis_armclang.h)(0x645DB1F7)()
+F (CMSIS/cmsis_armclang_ltm.h)(0x645DB1F7)()
+F (CMSIS/cmsis_compiler.h)(0x645DB1F7)()
+F (CMSIS/cmsis_version.h)(0x645DB1F7)()
+F (CMSIS/core_cm0plus.h)(0x645DB1F7)()
+F (CMSIS/mpu_armv7.h)(0x645DB1F7)()
+F (component/lists/fsl_component_generic_list.c)(0x645DB1F7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/fsl_component_generic_list.o -MD)
+I (component\lists\fsl_component_generic_list.h)(0x645DB1F7)
+I (drivers\fsl_common.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\assert.h)(0x5F36D096)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F36D0AC)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F36D0AE)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+I (drivers\fsl_common_arm.h)(0x645DB1F7)
+I (drivers\fsl_clock.h)(0x645DB1F7)
+F (component/lists/fsl_component_generic_list.h)(0x645DB1F7)()
+F (component/uart/fsl_adapter_lpuart.c)(0x645DB1F7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/fsl_adapter_lpuart.o -MD)
+I (drivers\fsl_lpuart.h)(0x645DB1F7)
+I (drivers\fsl_common.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\assert.h)(0x5F36D096)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F36D0AC)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F36D0AE)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+I (drivers\fsl_common_arm.h)(0x645DB1F7)
+I (drivers\fsl_clock.h)(0x645DB1F7)
+I (component\uart\fsl_adapter_uart.h)(0x645DB1F7)
+F (component/uart/fsl_adapter_uart.h)(0x645DB1F7)()
+F (device/fsl_device_registers.h)(0x645DB1F7)()
+F (device/MKE17Z7.h)(0x645DB1F7)()
+F (device/MKE17Z7_features.h)(0x645DB1F7)()
+F (device/system_MKE17Z7.c)(0x645DB1F7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/system_mke17z7.o -MD)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+F (device/system_MKE17Z7.h)(0x645DB1F7)()
+F (doc/readme.txt)(0x645DB1F7)()
+F (drivers/fsl_clock.c)(0x645DB1F7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/fsl_clock.o -MD)
+I (drivers\fsl_clock.h)(0x645DB1F7)
+I (drivers\fsl_common.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\assert.h)(0x5F36D096)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F36D0AC)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F36D0AE)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+I (drivers\fsl_common_arm.h)(0x645DB1F7)
+F (drivers/fsl_clock.h)(0x645DB1F7)()
+F (drivers/fsl_common.c)(0x645DB1F7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/fsl_common.o -MD)
+I (drivers\fsl_common.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\assert.h)(0x5F36D096)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F36D0AC)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F36D0AE)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+I (drivers\fsl_common_arm.h)(0x645DB1F7)
+I (drivers\fsl_clock.h)(0x645DB1F7)
+F (drivers/fsl_common.h)(0x645DB1F7)()
+F (drivers/fsl_common_arm.c)(0x645DB1F7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/fsl_common_arm.o -MD)
+I (drivers\fsl_common.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\assert.h)(0x5F36D096)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F36D0AC)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F36D0AE)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+I (drivers\fsl_common_arm.h)(0x645DB1F7)
+I (drivers\fsl_clock.h)(0x645DB1F7)
+F (drivers/fsl_common_arm.h)(0x645DB1F7)()
+F (drivers/fsl_ftm.c)(0x645DB1F7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/fsl_ftm.o -MD)
+I (drivers\fsl_ftm.h)(0x645DB1F7)
+I (drivers\fsl_common.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\assert.h)(0x5F36D096)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F36D0AC)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F36D0AE)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+I (drivers\fsl_common_arm.h)(0x645DB1F7)
+I (drivers\fsl_clock.h)(0x645DB1F7)
+F (drivers/fsl_ftm.h)(0x645DB1F7)()
+F (drivers/fsl_gpio.c)(0x645DB1F7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/fsl_gpio.o -MD)
+I (drivers\fsl_gpio.h)(0x645DB1F7)
+I (drivers\fsl_common.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\assert.h)(0x5F36D096)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F36D0AC)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F36D0AE)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+I (drivers\fsl_common_arm.h)(0x645DB1F7)
+I (drivers\fsl_clock.h)(0x645DB1F7)
+F (drivers/fsl_gpio.h)(0x645DB1F7)()
+F (drivers/fsl_lpuart.c)(0x645DB1F7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/fsl_lpuart.o -MD)
+I (drivers\fsl_lpuart.h)(0x645DB1F7)
+I (drivers\fsl_common.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\assert.h)(0x5F36D096)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F36D0AC)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F36D0AE)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+I (drivers\fsl_common_arm.h)(0x645DB1F7)
+I (drivers\fsl_clock.h)(0x645DB1F7)
+F (drivers/fsl_lpuart.h)(0x645DB1F7)()
+F (drivers/fsl_port.h)(0x645DB1F7)()
+F (drivers/fsl_smc.c)(0x645DB1F7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/fsl_smc.o -MD)
+I (drivers\fsl_smc.h)(0x645DB1F7)
+I (drivers\fsl_common.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\assert.h)(0x5F36D096)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F36D0AC)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F36D0AE)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+I (drivers\fsl_common_arm.h)(0x645DB1F7)
+I (drivers\fsl_clock.h)(0x645DB1F7)
+F (drivers/fsl_smc.h)(0x645DB1F7)()
+F (source/ftm_simple_pwm.c)(0x645E16FB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/ftm_simple_pwm.o -MD)
+I (utilities\fsl_debug_console.h)(0x645DB1F7)
+I (drivers\fsl_common.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\assert.h)(0x5F36D096)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F36D0AC)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F36D0AE)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+I (drivers\fsl_common_arm.h)(0x645DB1F7)
+I (drivers\fsl_clock.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F36D092)
+I (board\pin_mux.h)(0x645DB346)
+I (board\clock_config.h)(0x645DB346)
+I (board\board.h)(0x645DB1F7)
+I (drivers\fsl_gpio.h)(0x645DB1F7)
+I (drivers\fsl_ftm.h)(0x645DB1F7)
+F (startup/startup_MKE17Z7.S)(0x645DB1F7)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=gnu -c-gdwarf-3 -D__MICROLIB-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION=533 -DCPU_MKE17Z256VLH7 -DDEBUG-o debug/startup_mke17z7.o)
+F (utilities/fsl_assert.c)(0x645DB1F7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/fsl_assert.o -MD)
+I (drivers\fsl_common.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\assert.h)(0x5F36D096)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F36D0AC)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F36D0AE)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+I (drivers\fsl_common_arm.h)(0x645DB1F7)
+I (drivers\fsl_clock.h)(0x645DB1F7)
+I (utilities\fsl_debug_console.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F36D092)
+F (utilities/fsl_debug_console.c)(0x645DB1F7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/fsl_debug_console.o -MD)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F36D092)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5F36D0B4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\math.h)(0x5F36D0A0)
+I (utilities\fsl_debug_console.h)(0x645DB1F7)
+I (drivers\fsl_common.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\assert.h)(0x5F36D096)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F36D0AC)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F36D0AE)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+I (drivers\fsl_common_arm.h)(0x645DB1F7)
+I (drivers\fsl_clock.h)(0x645DB1F7)
+I (component\uart\fsl_adapter_uart.h)(0x645DB1F7)
+I (utilities\fsl_str.h)(0x645DB1F7)
+F (utilities/fsl_debug_console.h)(0x645DB1F7)()
+F (utilities/fsl_str.c)(0x645DB1F7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK-o debug/fsl_str.o -MD)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\math.h)(0x5F36D0A0)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x5F36D092)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5F36D0AE)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\errno.h)(0x5F36D092)
+I (utilities\fsl_str.h)(0x645DB1F7)
+I (drivers\fsl_common.h)(0x645DB1F7)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\assert.h)(0x5F36D096)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5F36D0AC)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F36D0A8)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\string.h)(0x5F36D0A4)
+I (D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5F36D0AE)
+I (device\fsl_device_registers.h)(0x645DB1F7)
+I (device\MKE17Z7.h)(0x645DB1F7)
+I (CMSIS\core_cm0plus.h)(0x645DB1F7)
+I (CMSIS\cmsis_version.h)(0x645DB1F7)
+I (CMSIS\cmsis_compiler.h)(0x645DB1F7)
+I (CMSIS\cmsis_armclang.h)(0x645DB1F7)
+I (device\system_MKE17Z7.h)(0x645DB1F7)
+I (device\MKE17Z7_features.h)(0x645DB1F7)
+I (drivers\fsl_common_arm.h)(0x645DB1F7)
+I (drivers\fsl_clock.h)(0x645DB1F7)
+I (utilities\fsl_debug_console.h)(0x645DB1F7)
+F (utilities/fsl_str.h)(0x645DB1F7)()
