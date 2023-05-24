@@ -1,0 +1,7 @@
+-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c
+-fno-rtti -funsigned-char -fshort-enums -fshort-wchar
+-D__MICROLIB -gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I board -I CMSIS -I component/lists -I component/uart -I device -I ./drivers -I frdmke17z/driver_examples/ftm/simple_pwm -I utilities -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb
+-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"
+-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"
+-D__UVISION_VERSION="533" -DCPU_MKE17Z256VLH7 -DDEBUG -DCPU_MKE17Z256VLL7 -DFRDM_KE17Z -DFREEDOM -DMCUXPRESSO_SDK
+-o debug/fsl_adapter_lpuart.o -MD "component/uart/fsl_adapter_lpuart.c"

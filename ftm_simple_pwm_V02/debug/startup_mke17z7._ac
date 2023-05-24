@@ -1,0 +1,6 @@
+--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=gnu -c
+-gdwarf-3 -D__MICROLIB
+-I"D:/Program Files (x86)/keil_v5/NXP/MKE17Z7_DFP/15.0.0"
+-I"D:/Program Files (x86)/keil_v5/ARM/CMSIS/Include"
+-D__UVISION_VERSION=533 -DCPU_MKE17Z256VLH7 -DDEBUG
+-o debug/startup_mke17z7.o "startup/startup_MKE17Z7.S"

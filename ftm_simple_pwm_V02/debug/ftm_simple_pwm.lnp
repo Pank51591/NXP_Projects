@@ -1,0 +1,24 @@
+--cpu Cortex-M0+
+"debug\board.o"
+"debug\clock_config.o"
+"debug\pin_mux.o"
+"debug\fsl_component_generic_list.o"
+"debug\fsl_adapter_lpuart.o"
+"debug\system_mke17z7.o"
+"debug\fsl_clock.o"
+"debug\fsl_common.o"
+"debug\fsl_common_arm.o"
+"debug\fsl_ftm.o"
+"debug\fsl_gpio.o"
+"debug\fsl_lpuart.o"
+"debug\fsl_smc.o"
+"debug\fsl_lptmr.o"
+"debug\ftm_simple_pwm.o"
+"debug\startup_mke17z7.o"
+"debug\fsl_assert.o"
+"debug\fsl_debug_console.o"
+"debug\fsl_str.o"
+--library_type=microlib --diag_suppress 6314 --strict --scatter "MKE17Z7/arm/MKE17Z256xxx7_flash.scf"
+--remove --keep=*(.FlashConfig) --entry=Reset_Handler --remove --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\output\ftm_simple_pwm.map" -o debug\ftm_simple_pwm.out
