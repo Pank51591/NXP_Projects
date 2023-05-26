@@ -123,6 +123,7 @@ uint8_t err;
 uint16_t current_rpm;
 uint16_t target_rpm = 560;  //
 uint8_t firstPower = 0;
+uint16_t ch;
 
 #define BOARD_SW_GPIO GPIOD
 #define BOARD_SW_GPIO_PIN 16U
@@ -323,9 +324,7 @@ void LPTMR_HANDLER(void)
 			intcounter = 0;
 			
 			motor100ms = motorcounter/12 * 60;   //多少转每分钟
-			
-			
-			
+
 			PRINTF(" 频率 = %d Hz\r\n",motorcounter);
 			PRINTF(" 占空比 = %d\r\n",updatedDutycycle);
 			PRINTF(" 当前转速 = %d r/s  \r\n",motorcounter/12 );
@@ -364,6 +363,8 @@ void LPTMR_HANDLER(void)
 
 			/* Start channel output with updated dutycycle */
 			FTM_UpdateChnlEdgeLevelSelect(Board_FTM_2, BOARD_FTM_CHANNEL, pwmLevel);
+			
+			
 		
 		}
 		
@@ -470,17 +471,14 @@ void GPIO_INPUT_CONFIG(void)
 
 
 
-uint16_t ch;
+
 
 /*!
  * @brief Main function
  */
 int main(void)
 {  
-    char cm;
-	  int ct = 0;
-	  uint8_t i ;
-	
+	  uint16_t cm;
 	
     /* Board pin, clock, debug console init */
     BOARD_InitBootPins();
@@ -496,34 +494,31 @@ int main(void)
 
 		Input_capture_init();
 	
-	  firstPower = 1;
-	  
+	  PRINTF("\r\n  请输入转速,范围[50~1950]，输入字符后请加回车:");
 	
     while (1)
     {
+      //判断串口的接收状态(这里很重要，不加的话程序跑不通，scanf会一直搜索)
+			if(kLPUART_RxActiveEdgeFlag & LPUART_GetStatusFlags(LPUART0))   
+				{						
+					SCANF("%d", &ch);
+					if(ch < 50 || ch > 1950)
+					{
+						PRINTF("转速设置错误\r\n");
+						
+					}
+					else
+					{
+						target_rpm = ch;
+						PRINTF("转速设置为：%d rmp\r\n", ch);
+					}
+					LPUART_ClearStatusFlags(LPUART0,kLPUART_AllClearFlags);
+				}
 
-			/*首次上电时运行这一段*/	
-			if(firstPower)
-			{		
-				firstPower = 0;
-
-        PRINTF("\r\n  请输入转速,范围[200~1950]，输入字符后请加回车:");
-			}
 			
-			SCANF("%d", &ch);
-			if(ch < 200 || ch > 1950)
+			
+			//else
 			{
-				PRINTF("转速设置错误\r\n");
-				target_rpm = ch;
-			}
-			else
-			{
-				PRINTF("转速设置为：%d rmp\r\n", ch);
-			}
-			
-
-			
-		
 			#if 1
 			if(true == ftmIsrFlag)
 			{
@@ -557,6 +552,11 @@ int main(void)
 				
 			}
 			#endif
+			}
+     
+			
+		
+
 			
 			
 			

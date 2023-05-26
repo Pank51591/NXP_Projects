@@ -1,4 +1,7 @@
 SET PATH=D:\Program Files (x86)\keil_v5\ARM\ARMCLANG\Bin;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Python311\Scripts\;C:\Program Files\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\TortoiseSVN\bin;D:\Program Files\Microchip\xc8\v2.36\bin;C:\mingw-w64\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\mingw64\bin;D:\Program Files\Git\cmd;C:\Users\80023166\AppData\Local\Microsoft\WindowsApps;;D:\Program Files\VS Code\Microsoft VS Code\bin
+SET ARMCC6_ASMOPT=--diag_suppress=9931
+SET ARMCC6_CCOPT=--diag_suppress=9931
+SET ARMCC6_LINKOPT=--diag_suppress=9931
 SET CPU_TYPE=MKE17Z256VLH7
 SET CPU_VENDOR=NXP
 SET UV2_TARGET=ftm_simple_pwm debug

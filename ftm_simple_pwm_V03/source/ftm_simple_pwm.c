@@ -90,7 +90,7 @@ void TIM2_Init(void);
  ******************************************************************************/
 volatile bool ftmIsrFlag          = false;/*  */
 volatile bool brightnessUp        = true; /* Indicate LED is brighter or dimmer */
-volatile uint8_t updatedDutycycle = 20U;
+volatile uint8_t updatedDutycycle = 10U;
 
 /* Record FTM TOF interrupt times */
 volatile uint32_t g_timerOverflowInterruptCount = 0u;
