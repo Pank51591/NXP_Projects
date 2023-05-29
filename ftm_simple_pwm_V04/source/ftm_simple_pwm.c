@@ -336,10 +336,11 @@ void LPTMR_HANDLER(void)
 			
 			if(err>5)
 			{
-					if(updatedDutycycle>=1)
+				  /*占空比这里要调一下，最小不要到0*/
+					if(updatedDutycycle>=3)
 						updatedDutycycle-=1;
 					else 
-						updatedDutycycle=0;
+						updatedDutycycle=2;
 			}
 			else if(err<5)
 			{
@@ -362,9 +363,7 @@ void LPTMR_HANDLER(void)
       FTM_SetSoftwareTrigger(Board_FTM_2, true);
 
 			/* Start channel output with updated dutycycle */
-			FTM_UpdateChnlEdgeLevelSelect(Board_FTM_2, BOARD_FTM_CHANNEL, pwmLevel);
-			
-			
+			FTM_UpdateChnlEdgeLevelSelect(Board_FTM_2, BOARD_FTM_CHANNEL, pwmLevel);	
 		
 		}
 		
